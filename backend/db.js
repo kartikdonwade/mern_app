@@ -1,6 +1,5 @@
 // const mongoose = require("mongoose");
-const url =
-  "mongodb+srv://kartikdonwade45:MessLocate@cluster0.ylehblf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url = process.env.URL;
 //   const mongodb = ()=>{
 //     mongoose.connect(url , ()=>{
 //         console.log("connected");

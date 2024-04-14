@@ -5,7 +5,7 @@ const { body, validationResult } = require("express-validator");
 
 
 router
-  .route("/")
+  .route("/createuser")
   .post(
     [
       body("email", "Please enter valid email").isEmail(),
@@ -21,7 +21,7 @@ router
         //console.log("Router");
         //res.status(200).send("Router");
         user.create({
-          name: "Kart Donwade",
+          name: "Kartu Donwade",
           location: "Qwerty edrefef",
           email: "kartik.donwade21@gmail.com",
           password: "123456",

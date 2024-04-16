@@ -21,7 +21,7 @@ router
         //console.log("Router");
         //res.status(200).send("Router");
         user.create({
-          name: "Kartu Donwade",
+          name: "Ktu Donwade",
           location: "Qwerty edrefef",
           email: "kartik.donwade21@gmail.com",
           password: "123456",

@@ -4,8 +4,9 @@ import React,{useState} from "react";
 import { Link } from "react-router-dom";
 export default function Signup() {
   const [cred, setcred] = useState({name:"",email:"",password:"",location:""});
+  console.log(cred);
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
     // const response = fetch("http://localhost:5000/api/user",{
     //   method: "POST",
     //   headers: {
@@ -22,13 +23,13 @@ const response =await fetch("http://localhost:5000/api/createuser", {
     "Content-Type": "application/json",
   },
   body: JSON.stringify({
-    name: cred.name,
-    email: cred.email,
-    password: cred.password,
-    location: cred.location,
+    name: "bala",
+    email: "kartik1@gmail.com",
+    password: "123789",
+    location: "punA",
   }),
 });
-
+console.log(response);
 const data = await response.json();
 if(!data.success) {
   alert("Wrong credentials");
